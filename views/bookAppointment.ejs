@@ -1,0 +1,61 @@
+<!-- Header part -->
+<%- include("header2") -%>
+
+
+
+<!-- middle wrapper start -->
+
+<section class="footer-spacing">
+
+  <div class="card rounded box details-box">
+
+    <div class="card-body light-bg-color">
+      <form action="/bookAppointment" method="post">
+
+        <div class="left-alignment sub-title">
+          <h2>Doctor name : <%=doctor.profiled.name%></h2>
+          <hr>
+          <h2>Doctor's Specialization : <%=doctor.profiled.profession%></h2>
+          <hr>
+        </div>
+
+        <div class="left-alignment sub-title">
+
+          <label for="">Enter Time for appointment:</label>
+          <input type="time" name="appttime" >
+          <br>
+          <hr>
+
+          <label for="">Enter Date for appointment:</label>
+          <input type="date" name="apptdate" >
+          <br>
+          <hr>
+          <label for="">Mode:  &nbsp &nbsp &nbsp</label>
+
+          <input type="radio" name="selectone" style="box-shadow: none;" value="online"> Online
+          <input type="radio" name="selectone" style="box-shadow: none;" value="offline"> Offline
+          <br>
+          <hr>
+
+          <label for="">Tell Your Symptoms:</label>
+          <input type="text" name="symptoms">
+
+        </div>
+        <div class="my-5 sub-title">
+          <button type="submit" name="docid" class="btn btn-primary" value=<%=doctor._id%>>Confirm Book Appointment </button>
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- middle wrapper end -->
+
+
+
+<!-- Footer part -->
+<%- include("footer") -%>

@@ -1,0 +1,26 @@
+<%- include("header2") -%>
+
+<%  note.notes.forEach(function(string){ %>
+<div class="card rounded box">
+    <div class="card-body light-bg-color">
+        <div class="bookapp sub-title">
+          <p>
+            <%=string%>
+          </p>
+        </div>
+        <div class="bookapp sub-title">
+          <p>
+            <a href="/dashboardDoc"><button class="btn btn-success my-3"  name="button">Go to Dashboard</button></a>
+          </p>
+        </div>
+    </div>
+
+</div>
+<%  }); %>
+
+
+
+
+
+
+<%- include("footer") -%>
