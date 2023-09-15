@@ -36,11 +36,6 @@
 * Allows the doctor to upload patients test results.
 
 
-## Contributors
-* [Shashank Pandey](https://github.com/shashank088)
-* [Shubham Dixit](https://github.com/shubhamdixit760)
-* [Nishant Rai](https://github.com/nishu982)
-
 ## Feedback
 Feel free to contact us if you find any bugs.
 
